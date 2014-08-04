@@ -22,13 +22,14 @@ module.exports = function(opt)
 
 		$('script').each(function ( )
 		{
-			var script_orig = $(this).html();
+			var $this = $(this),
+				script_orig = $this.text().trim();
 
 			if (script_orig !== '')
 			{
 				var script_min = uglify.minify(script_orig, {fromString: true});
 
-				$(this).html(script_min.code);
+				$this.text(script_min.code);
 
 				has_done_nothing = false;
 			}

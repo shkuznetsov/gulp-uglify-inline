@@ -1,10 +1,17 @@
 var through = require('through2'),
 	cheerio = require('cheerio'),
-	uglify = require('uglify-js');
+	uglify = require('uglify-js'),
+	gutil = require('gulp-util');
 
-module.exports = function(opt)
+const PLUGIN_NAME = 'gulp-uglify-inline';
+
+module.exports = function ( opt )
 {
-	function minimize (file, encoding, callback)
+	opt = opt || {};
+
+	opt.fromString = true;
+
+	function minimize ( file, encoding, callback )
 	{
 		if (file.isNull())
 		{
@@ -27,7 +34,7 @@ module.exports = function(opt)
 
 			if (script_orig !== '')
 			{
-				var script_min = uglify.minify(script_orig, {fromString: true});
+				var script_min = uglify.minify(script_orig, opt);
 
 				$this.text(script_min.code);
 

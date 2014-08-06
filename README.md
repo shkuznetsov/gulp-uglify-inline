@@ -1,4 +1,4 @@
-# gulp-uglify-inline [![Build Status](https://travis-ci.org/shkuznetsov/gulp-uglify-inline.svg?branch=master)](https://travis-ci.org/shkuznetsov/gulp-uglify-inline)
+# gulp-uglify-inline [![NPM version](https://badge.fury.io/js/gulp-uglify-inline.svg)](http://badge.fury.io/js/gulp-uglify-inline) [![Build Status](https://travis-ci.org/shkuznetsov/gulp-uglify-inline.svg?branch=master)](https://travis-ci.org/shkuznetsov/gulp-uglify-inline)
 
 gulp-uglify-inline is a [gulp](https://github.com/wearefractal/gulp) plugin to uglify inline scripts.
 

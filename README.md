@@ -1,28 +1,27 @@
-## Information
+# gulp-uglify-inline
 
-TBC
+gulp-uglify-inline is a [gulp](https://github.com/wearefractal/gulp) plugin to uglify inline scripts.
+
+Uses [cheerio](https://github.com/cheeriojs/cheerio) to parse HTML and [UglifyJS](https://github.com/mishoo/UglifyJS) to uglify JS code.
+
+## Installation
+
+Install package with NPM and add it to your development dependencies:
+
+`npm install --save-dev gulp-uglify-inline`
+
+## Usage
+
+```javascript
+var uglifyInline = require('gulp-uglify-inline');
+
+gulp.task('uglify-html', function() {
+  gulp.src('./*.html')
+    .pipe(uglifyInline())
+    .pipe(gulp.dest('dist'))
+});
+```
 
 ## LICENSE
 
-(MIT License)
-
-Copyright (c) 2014 Alexander Kuznetsov (<alexander@kuznetsov.by>)
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[MIT License](http://en.wikipedia.org/wiki/MIT_License)

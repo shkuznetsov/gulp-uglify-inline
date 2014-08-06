@@ -15,7 +15,7 @@ Install package with NPM and add it to your development dependencies:
 ```javascript
 var uglifyInline = require('gulp-uglify-inline');
 
-vay options = {
+var options = {
 	output: {
 		comments: true
 	}

@@ -1,6 +1,6 @@
 {
 	"name": "gulp-uglify-inline",
-	"description": "Uglifies inline scripts",
+	"description": "Gulp plugin to uglify inline scripts",
 	"version": "0.1.0",
 	"author": {
 		"name": "Alexander Kuznetsov",
@@ -13,7 +13,13 @@
 	},
 	"homepage": "https://github.com/shkuznetsov/gulp-uglify-inline",
 	"keywords": [
-		"gulpplugin"
+		"gulpplugin",
+		"uglify",
+		"minify",
+		"inline",
+		"js",
+		"scripts",
+		"script"
 	],
 	"main": "./index.js",
 	"dependencies": {

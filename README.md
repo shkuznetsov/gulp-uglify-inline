@@ -15,12 +15,20 @@ Install package with NPM and add it to your development dependencies:
 ```javascript
 var uglifyInline = require('gulp-uglify-inline');
 
-gulp.task('uglify-html', function() {
+vay options = {
+	output: {
+		comments: true
+	}
+};
+
+gulp.task('uglify-inline', function() {
   gulp.src('./*.html')
-    .pipe(uglifyInline())
+    .pipe(uglifyInline(options))
     .pipe(gulp.dest('dist'))
 });
 ```
+
+Options object will be passed directly to uglify's ``minify()`` function, so you can use any options described [here](https://github.com/mishoo/UglifyJS2#api-reference).
 
 ## LICENSE
 

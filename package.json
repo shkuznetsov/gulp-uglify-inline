@@ -1,37 +1,45 @@
 {
-  "name": "gulp-uglify-inline",
-  "description": "Uglifies inline scripts",
-  "version": "0.0.2",
-  "author": {
-    "name": "Alexander Kuznetsov",
-    "email": "alexander@kuznetsov.by",
-    "url": "http://kuznetsov.by/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shkuznetsov/gulp-uglify-inline.git"
-  },
-  "homepage": "https://github.com/shkuznetsov/gulp-uglify-inline",
-  "keywords": [
-    "gulpplugin"
-  ],
-  "main": "./index.js",
-  "dependencies": {
-    "gulp-util": "^2.2.17",
-    "cheerio": "^0.17.0",
-    "uglify-js": "^2.4.15",
-    "through2": "^0.5.1"
-  },
-  "engines": {
-    "node": ">= 0.10"
-  },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/shkuznetsov/gulp-uglify-inline/issues"
-  }
+	"name": "gulp-uglify-inline",
+	"description": "Uglifies inline scripts",
+	"version": "0.0.2",
+	"author": {
+		"name": "Alexander Kuznetsov",
+		"email": "alexander@kuznetsov.by",
+		"url": "http://kuznetsov.by/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shkuznetsov/gulp-uglify-inline.git"
+	},
+	"homepage": "https://github.com/shkuznetsov/gulp-uglify-inline",
+	"keywords": [
+		"gulpplugin"
+	],
+	"main": "./index.js",
+	"dependencies": {
+		"gulp-util": "^2.2.17",
+		"cheerio": "^0.17.0",
+		"uglify-js": "^2.4.15",
+		"through2": "^0.5.1"
+	},
+	"devDependencies": {
+		"gulp": "~3.5.2",
+		"chai": "~1.9.0",
+		"mocha": "~1.17.1"
+	},
+	"scripts": {
+		"test": "mocha"
+	},
+	"engines": {
+		"node": ">= 0.10"
+	},
+	"licenses": [
+		{
+			"type": "MIT"
+		}
+	],
+	"readmeFilename": "README.md",
+	"bugs": {
+		"url": "https://github.com/shkuznetsov/gulp-uglify-inline/issues"
+	}
 }

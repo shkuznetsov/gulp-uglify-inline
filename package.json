@@ -18,7 +18,7 @@
 		"minify",
 		"inline",
 		"js",
-		"scripts",
+		"javascript",
 		"script"
 	],
 	"main": "./index.js",
